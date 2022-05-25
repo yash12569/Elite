@@ -1201,3 +1201,12 @@ button, a { transition: var(--transition); }
   .footer-list:last-of-type { width: 33.33%; }
 
 }
+.aboutus-container{
+  border:1px solid rgb(217, 210, 210);
+  padding: 20px;
+  text-align:justify;
+  box-shadow: 0 10px 500px rgba(129, 129, 228, 0.5),0 6px 7px rgba(55, 209, 240, 0.23);
+}
+.blog-title{
+  width:80%;
+}
