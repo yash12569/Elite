@@ -18,7 +18,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
         rel="stylesheet">
-
+        <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            * {box-sizing: border-box;}
+            
+            input[type=text], select, textarea {
+              width: 100%;
+              padding: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+              margin-top: 6px;
+              margin-bottom: 16px;
+              resize: vertical;
+            }
+            
+            input[type=submit] {
+              background-color: #a2baf6;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+            
+            .container {
+              border-radius: 5px;
+              background-color: var(--alice-blue-1);;
+              padding: 20px;
+            }
+            </style>
 </head>
 
 <body>
@@ -95,45 +124,35 @@
     <section class="section hero" id="home">
         <div class="container">
 
-            <div class="aboutus-container">
-                <h1>About Elite Cars</h1><br>
-                <p >
-                    Elite Cars is India's leading car search venture that helps users buy cars that are right for
-                    them. Its website and app carry rich automotive content such as expert reviews, detailed specs and
-                    prices, comparisons as well as videos and pictures of all car brands and models available in India.
-                    The company has tie-ups with many auto manufacturers, more than 4000 car dealers and numerous
-                    financial institutions to facilitate the purchase of vehicles.<br><br>
-
-                    Elite Cars has launched many innovative features to ensure that users get an immersive experience
-                    of the car model before visiting a dealer showroom. These include a Feel The Car tool that gives
-                    360-degree interior/exterior views with sounds of the car and explanations of features with videos;
-                    search and comparison by make, model, price, features; and live offers and promotions in all cities.
-                    The platform also has used car classifieds wherein users can upload their cars for sale, and find
-                    used cars for buying from individuals and used car dealers.<br><br>
-
-                    Besides the above consumer product features, Elite Cars provides a rich array of tech-enabled
-                    tools to OE manufacturers and car dealers. These include apps for dealer sales executives to manage
-                    leads, cloud services for tracking sales performance, call tracker solution, digital marketing
-                    support, virtual online showroom and outsourced lead management operational process for taking
-                    consumers from enquiry to sale.<br><br>
-
-                    Our vision is to construct a complete ecosystem for consumers and car manufacturers, dealers and
-                    related businesses such that consumers have easy and complete access to not only buying and selling
-                    cars, but also manage their entire ownership experience, be it accessories, tyres, batteries,
-                    insurance or roadside assistance.<br><br>
-
-                    The company has expanded to Southeast Asia with the launch of Zigwheels.ph, Zigwheels.my and
-                    Oto.com. It also has a presence in the UAE with Zigwheels.ae<br><br>
-
-                    <h1>Investors and shareholders </h1>
-                    <br><br>
-                    Elite Cars, which went live in 2008, was set up by a bunch of young, enthusiastic IIT graduates.
-                    Its investors include Google Capital, Tybourne Capital, Hillhouse Capital, Sequoia Capital, HDFC
-                    Bank, Ratan Tata and Times Internet.
-                </p>
-
-
-            </div>
+            <form action="feedback.php" method="POST">
+                First Name
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                Last Name
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+            
+                Phone Number
+                <input type="text" id="pnumber" name="phonenumber" placeholder="Phone Number..">
+            
+                
+                Country
+                <select id="country" name="country">
+                    <option value="australia">--Choose Country--</option>
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                  <option value="india">India</option>
+                  <option value="south africa">South Africa</option>
+                  <option value="russia">Russia</option>
+                  <option value="pakistan">Pakistan</option>
+                  <option value="bangladesh">Bangladesh</option>
+                  <option value="zimbawe">Zimbawe</option>
+                </select>
+                Subject
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <input type="submit" id="submit" name= "submit" class="button" value="Submit">
+              </form>
     </section>
     <!-- 
     - #FOOTER
