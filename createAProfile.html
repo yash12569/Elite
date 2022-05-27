@@ -42,35 +42,31 @@
         - Blog text
       -->
 
-    <section class="section hero" id="home">
-        
-
-
-
+    <section class="section hero" id="home" >
             <div class="container">
                 <div class="title">Registration</div>
                 <div class="content">
-                    <form action="#">
+                    <form method="POST" action="register.php">
                         <div class="user-details">
                             <div class="input-box">
                                 <span class="details">Full Name</span>
-                                <input type="text" placeholder="Enter your name" required>
+                                <input type="text" name="name" placeholder="Enter your name" required>
                             </div>
                             <div class="input-box">
                                 <span class="details">Username</span>
-                                <input type="text" placeholder="Enter your username" required>
+                                <input type="text" name="username" placeholder="Enter your username" required>
                             </div>
                             <div class="input-box">
                                 <span class="details">Email</span>
-                                <input type="text" placeholder="Enter your email" required>
+                                <input type="text" name="Email" placeholder="Enter your email" required>
                             </div>
                             <div class="input-box">
                                 <span class="details">Phone Number</span>
-                                <input type="text" placeholder="Enter your number" required>
+                                <input type="text" name="Phone" placeholder="Enter your number" required>
                             </div>
                             <div class="input-box">
                                 <span class="details">Password</span>
-                                <input type="text" placeholder="Enter your password" required>
+                                <input type="password" name="Password" placeholder="Enter your password" required>
                             </div>
                             <div class="input-box">
                                 <span class="details">Confirm Password</span>
@@ -98,7 +94,7 @@
                             </div>
                         </div>
                         <div class="button">
-                            <input type="submit" value="Register">
+                            <input type="submit" name="submit" value="Register">
                         </div>
                     </form>
                 </div>
