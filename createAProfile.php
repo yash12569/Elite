@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+error_reporting(0);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +13,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs</title>
+    <title>Create Profile</title>
     <!-- 
       - custom css link
     -->
@@ -70,7 +78,7 @@
                             </div>
                             <div class="input-box">
                                 <span class="details">Confirm Password</span>
-                                <input type="text" placeholder="Confirm your password" required>
+                                <input type="text" name="cpassword" placeholder="Confirm your password" required>
                             </div>
                         </div>
                         <div class="gender-details">
@@ -93,9 +101,10 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="button">
+                        <div class="button" href="login.php">
                             <input type="submit" name="submit" value="Register">
                         </div>
+                        <h4>Have an account? </h4><a href="login.php">Login Here</a>
                     </form>
                 </div>
             </div>
